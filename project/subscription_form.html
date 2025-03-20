@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscribe - CINE VAULT</title>
+  <link rel="stylesheet" href="subscription_form.css">
+  <link rel="icon" href="pic/cine vault logo.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="logo-img">
+        <img src="pic/cine vault logo.png" alt="CINE VAULT">
+    </div>
+    <div class="logo">
+      CINE VAULT
+    </div>
+  </header>
+
+  <section class="heading-section">
+    <div class="background"></div>
+    <div class="subscription">
+      <h2>Become a Subscriber</h2>
+      <p>Get exclusive access to the latest movies, early releases, and special features!</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="form-container">
+      <h3>Subscription Form</h3>
+      <form id="subscription-form" method="get">
+        <div class="input-group">
+          <label for="name">Full Name</label>
+          <input type="text" class="form" name="name" required>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" class="form" name="email" required>
+        </div>
+
+        <div class="input-group">
+            <label for="payment">Select Plan</label>
+            <select class="form" name="plans" required>
+              <option value="first-class">First Class</option>
+              <option value="value-plan">Value Plan</option>
+              <option value="VIP-plan">VIP Plan</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+          <label for="payment">Payment Method</label>
+          <select class="form" name="payment" required>
+            <option value="credit-card">Credit Card</option>
+            <option value="netbanking">Netbanking</option>
+            <option value="bank-transfer">Bank Transfer</option>
+          </select>
+        </div>
+
+        <div class="submit-btn">
+          <button type="submit"><a href="homepage.html">Confirm Your Subscription</a></button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cine vault. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

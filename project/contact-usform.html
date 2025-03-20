@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-us</title>
+    <link rel="stylesheet" href="contact-usform.css">
+    <link rel="icon" href="pic/cine vault logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="pic/cine vault logo.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Contact Us</h1>
+    
+    <form action="/submit_form" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email id:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject"><br><br>
+
+        <label for="message">Anything Message for our Team:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <label for="contact_method">Preferred Contact Method:</label><br>
+        <input type="radio" id="email_contact" name="contact_method" value="Email" checked>
+        <label for="email_contact">Email</label><br>
+        <input type="radio" id="phone_contact" name="contact_method" value="Phone">
+        <label for="phone_contact">Phone</label><br><br>
+
+        <p>Please enter another contact number for emergency</p>
+        <label for="optional_phone">Phone Number:</label>
+        <input type="tel" id="optional_phone" name="optional_phone" required><br><br>
+
+        <label for="subscribe">Give permission for our Terms & Conditions:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="Yes" required><br><br>
+
+        <label for="appointment">Preferred Appointment Date:</label>
+        <input type="date" class="date-time" name="appointment"><br><br>
+
+        <label for="time">Preferred Appointment Time:</label>
+        <input type="time" class="date-time" name="time"><br><br>
+
+        <label for="priority">Message Priority:</label><br>
+        <select id="priority" name="priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select><br><br>
+
+        <input type="submit" id="submit" value="Submit">
+    </form>    
+</body>
+</html>
