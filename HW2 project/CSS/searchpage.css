@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
+    color: #fff;
+    width: 97.9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header {
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+}
+.logo-img {
+    position: relative;
+    margin-left: 2.5vh;
+}
+.logo-img img {
+    height: 10vh;
+    width: 12vh;
+    object-fit: contain;
+}
+.logo {
+    font-size: 3em;
+    font-weight: 700;
+    color: gold;
+    text-align: center;
+    margin-left: 15vw;
+    transition: text-shadow 0.3s ease;
+}
+.navbar {
+    width: 20vw;
+    height: 60%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-weight: 100;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: transparent;
+    z-index: 1;
+    transform-origin: top;
+    transition: transform 1s ease;
+}
+.navbar a {
+    margin: 0 15px;
+    color: white;
+    font-size: 1.5em;
+    position: static;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: gold;
+    transform: scale(1.25);
+    transition: all 0.3s ease;
+}
+
+.search-body{
+    width:100vw;
+    height:15vh;
+    margin-top:16px;
+    position: relative;
+}
+.tagline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:7vh;
+}
+.search-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:5vh;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+#search-bar{
+    width:45vw;
+    height: 5vh;
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid white;
+    padding: 0px 10px;
+    font-size: 1.1rem;
+}
+
+.category-section{
+    width: 97.8vw;
+    height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+}
+.category-section a{
+    text-decoration: none;
+}
+.list{
+    width:20vw;
+    height:20vh;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(45deg,rgba(0,0,0,1),rgba(0,0,0,0.2));
+    transition: all 0.3s ease;
+}
+.list:hover{
+    /*transform: rotatez(-3deg);*/
+    box-shadow:  0 4px 12px rgba(255, 215, 0, 0.5);
+}
+
+.heading-section {
+    width: 100vw;
+    height: 20vh;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.sub-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 44vh;
+    margin-top: 40px;
+}
+.movie {
+    width: 200px;
+    height: 300px;
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.movie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+.movie:hover {
+    transform: translateY(-25px);
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.5);
+}
+.movie-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer{
+    color: #aaa;
+    height: 23vh;
+    margin-left: 10px;
+    width: 96vw;
+    border-radius: 10px;
+    box-shadow: -1px -2px 10px rgba(255, 215, 0, 0.5);
+}
+footer ul{
+    list-style-type: none;
+    padding: 30px 20px 20px 0px;
+    margin :5px;
+}
+footer li{
+    color: #aaa;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+footer a{
+    text-decoration: none;
+    color: #aaa;
+}
+footer p {
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+}
+.links i{
+    margin:20px 20px 0px 0px;
+}
+.links img{
+    height: 70px;
+    width: 70px;
+}
