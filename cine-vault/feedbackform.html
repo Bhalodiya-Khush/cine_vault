@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedbackform.css">
+    <link rel="icon" href="cine vault logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="cine vault logo.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form action="feedbackform.php" method="GET">
+        
+        <h3>Personal Information</h3>
+        <hr>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100"><br><br>
+        <hr>
+        <br>
+        <nr></nr>
+        <h3>Feedback</h3>
+        <hr>
+        <label for="experience">How was your experience?</label><br>
+        <input type="radio" id="good" name="experience" value="good">
+        <label for="good">Good</label><br>
+        <input type="radio" id="average" name="experience" value="average">
+        <label for="average">Average</label><br>
+        <input type="radio" id="poor" name="experience" value="poor">
+        <label for="poor">Poor</label><br><br>
+
+        <label for="improvement">How can we improve?</label><br>
+        <textarea id="improvement" name="improvement" rows="4" cols="50"></textarea><br><br>
+
+        <label for="subscribe">Give permission for our Terms & conditions:</label><br>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Yes</label><br><br>
+
+        <label for="rating">Rate your experience:</label><br>
+        <select id="rating" name="rating">
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Average</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+        </select><br><br>
+        <hr>
+        <br>
+        <div>
+            <label for="submit">Submit your Response</label><br>
+            <input id="submit" type="submit" onclick="alert('Your Response is sent.')" value="Submit Feedback">
+        </div>
+        
+
+    </form>
+</body>
+</html>
