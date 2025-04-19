@@ -7,6 +7,7 @@ body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
     color: #fff;
     width: 97.9vw;
+    overflow-x: hidden;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -15,7 +16,7 @@ body {
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 12vh;
     display: flex;
     justify-content: space-between;
@@ -56,16 +57,6 @@ header {
     transform-origin: top;
     transition: transform 1s ease;
 }
-.menu-icon{
-    visibility: hidden;
-    position: absolute;
-    right: -1px;
-}
-.menu-toggle{
-    visibility: hidden;
-    position: absolute;
-    right: -1px;
-}
 .navbar a {
     margin: 0 15px;
     color: white;
@@ -77,6 +68,16 @@ header {
     color: gold;
     transform: scale(1.25);
     transition: all 0.3s ease;
+}
+.menu-icon{
+    visibility: hidden;
+    position: absolute;
+    right: -50px;
+}
+.menu-toggle{
+    visibility: hidden;
+    position: absolute;
+    right: -50px;
 }
 
 .search-body{
@@ -122,7 +123,7 @@ header {
 .category-section{
     width: 97.8vw;
     height: 100vh;
-    padding: 15px 0;
+    padding: 15px;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -200,7 +201,6 @@ header {
 footer{
     color: #aaa;
     height: auto;
-    margin-left: 10px;
     width: 96vw;
     border-radius: 10px;
     box-shadow: -1px -2px 10px rgba(255, 215, 0, 0.5);
@@ -310,15 +310,31 @@ footer p {
     .sub-section{
         display: block;
     }
+    .category-section{
+        width:auto;
+        height: auto;
+        padding: 5px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .list{
+        padding: 15px;
+        width:40vw;
+        height: 40px;
+        font-size: 1rem;
+    }
+    #ad{
+        margin-left: auto;
+        font-size: 1.5rem;
+    }
     .movie {
-        width: 98%;
+        width: auto;
         margin: 20px 0px;
         justify-content: space-around;
         gap: 10px;
     }
     .movie img {
         width: 40vw;
-        height: auto;
     }
     footer{
         width: 90%;
