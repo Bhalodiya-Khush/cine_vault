@@ -3,15 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
     color: #fff;
-    height: 100vh;
-    width: 100vw;
+    width: 97.9vw;
+    overflow-x: hidden;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -19,13 +21,14 @@ header {
     width: 100vw;
     height: 12vh;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 0.6vh;
     background: rgba(0, 0, 0, 0.8);
 }
 .logo-img {
     position: relative;
+    margin-left: 2.5vh;
 }
 .logo-img img {
     height: 10vh;
@@ -37,16 +40,22 @@ header {
     font-weight: 700;
     color: gold;
     text-align: center;
-    margin-left: 34.5vw;
+    margin-left: 15vw;
     transition: text-shadow 0.3s ease;
 }
-.logo:hover{
-    text-shadow: 3px 3px 15px rgba(255, 215, 0, 0.1), 3px 3px 15px rgba(255, 215, 0, 0.2), 3px 3px 15px rgba(255, 215, 0, 0.3);
+.navbar {
+    width: 20vw;
+    height: 60%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .heading-section {
     width: 100%;
-    height: 41vh;
+    height: auto;
+    padding: 4%;
     margin-top: 15px;
     display: flex;
     justify-content: center;
@@ -54,6 +63,7 @@ header {
     position: relative;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
 }
+
 .background {
     position: absolute;
     top: 0;
@@ -63,6 +73,7 @@ header {
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
 .subscription {
     z-index: 2;
     text-align: center;
@@ -71,6 +82,7 @@ header {
     font-weight: bold;
     letter-spacing: 2px;
 }
+
 .subscription button {
     background-color: #ffd700;
     border: none;
@@ -82,10 +94,12 @@ header {
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }
-.subscription a{
+
+.subscription a {
     text-decoration: none;
     color: black;
 }
+
 .subscription button:hover {
     background-color: gold;
     transform: scale(1.1);
@@ -96,7 +110,9 @@ header {
     justify-content: center;
     gap: 30px;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
+
 .movie {
     width: 200px;
     height: 300px;
@@ -105,17 +121,21 @@ header {
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
 }
+
 .movie img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 0.9;
 }
+
 .movie:hover {
     transform: translateY(-25px);
     box-shadow: 0 4px 20px rgba(255, 215, 0, 0.5);
 }
+
 .movie-info {
     position: absolute;
     bottom: 0;
@@ -131,6 +151,47 @@ footer {
     text-align: center;
     color: #aaa;
 }
+
 footer p {
     font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    header
+    {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo {
+        font-size: 2em;
+        margin-left: 0;
+    }
+    .logo-img img{
+        height: 70px;
+        width: 70px;
+    }
+    .subscription{
+        font-size: 1rem;
+    }
+    .sub-section{
+        display: block;
+    }
+    .movie {
+        width: auto;
+        margin: 20px 0px;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .movie img {
+        width: 50vw;
+    }
+    footer{
+        width: 90%;
+    }
 }
