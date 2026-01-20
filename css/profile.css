@@ -1,0 +1,116 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.menu {
+    background: #121212;
+    border-radius: 30px;
+    width: 50vw;
+    padding: 60px;
+    font-size: 1.3em;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.buttons div {
+    flex: 1;
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list-item {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.heading-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.movie {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.movie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        width: 95%;
+        padding: 30px;
+        font-size: 1em;
+    }
+
+    .buttons {
+        flex-direction: row;
+    }
+
+    .sub-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie {
+        width: 80%;
+        height: 260px;
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+}
